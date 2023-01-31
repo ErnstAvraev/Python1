@@ -17,7 +17,7 @@
 # # Петя, Катя и Сережа делают из бумаги журавликов. Вместе они сделали
 # # S журавликов. Сколько журавликов сделал каждый ребенок, если известно, что Петя и
 # # Сережа сделали одинаковое количество журавликов, а Катя сделала в два раза больше
-# # журавликов, чем Петя и Сережа вместе?
+# # журавликов, чем Петя и Сережа вместе?‹
 
 # s = int(input('Введите количество журавликов: '))
 # amount = s/6
@@ -69,33 +69,33 @@
 # # вещественного или целого числа. Можно использовать decimal. Через строку решать
 # # нельзя.
 
-from decimal import Decimal
-try:
-    number = Decimal(input('Введите любое число: '))
-    sum = 0
-    sum1 = 0
-    sum2 = 0
-    numFloat = 0
-    numInt = 0
-    # проверка на целое или вещественное число
-    if number - int(number) == 0:
-        while number % 10 != 0:                                     # число целое
-            sum = sum+number % 10
-            number = number//10
-        print(sum)
-    else:                                                           # число вещественное
-        # находим дробную часть
-        numFloat = number-int(number)
-        # находим целую часть
-        numInt = int(number)
-        # находим сумму целой части
-        while numInt % 10 != 0:
-            sum1 = sum1+numInt % 10
-            numInt = numInt//10
-        # находим сумму дробной части
-        while numFloat % 1 != 0:
-            sum2 = sum2+int(numFloat*10)
-            numFloat = numFloat*10 - int(numFloat*10)
-        print(sum1+sum2)
-except:
-    print("Введите корректное число!")
+# from decimal import Decimal
+# try:
+#     number = Decimal(input('Введите любое число: '))
+#     sum = 0
+#     sum1 = 0
+#     sum2 = 0
+#     numFloat = 0
+#     numInt = 0
+#     # проверка на целое или вещественное число
+#     if number - int(number) == 0:
+#         while number % 10 != 0:                                     # число целое
+#             sum = sum+number % 10
+#             number = number//10
+#         print(sum)
+#     else:                                                           # число вещественное
+#         # находим дробную часть
+#         numFloat = number-int(number)
+#         # находим целую часть
+#         numInt = int(number)
+#         # находим сумму целой части
+#         while numInt % 10 != 0:
+#             sum1 = sum1+numInt % 10
+#             numInt = numInt//10
+#         # находим сумму дробной части
+#         while numFloat % 1 != 0:
+#             sum2 = sum2+int(numFloat*10)
+#             numFloat = numFloat*10 - int(numFloat*10)
+#         print(sum1+sum2)
+# except:
+#     print("Введите корректное число!")
