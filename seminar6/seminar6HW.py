@@ -5,21 +5,27 @@
 # # Ввод: 7 2 5
 # # Вывод: 7 9 11 13 15
 
+from random import randint as rnd
+
+
+# def arif_progress(first, step, size, lst=[]):
+#     for i in range(size):
+#         an = first + (i)*step
+#         lst.append(an)
+#     print(lst)
+
+
 # a1 = int(input("Введите первое число последовательности: "))
 # d = int(input("Введите шаг последовательности: "))
 # n = int(input("Введите количество элементов последовательности: "))
-# sp = []
-# for i in range(n):
-#     an = a1 + (i)*d
-#     sp.append(an)
-# print(sp)
+
+# arif_progress(a1, d, n)
 
 # # Задача 32: Определить индексы элементов массива (списка), значения которых
 # # принадлежат заданному диапазону (т.е. не меньше заданного минимума и не больше
 # # заданного максимума)
 # # Ввод: [-5, 9, 0, 3, -1, -2, 1, 4,-2,10,2,0,-9,8,10,-9, 0, -5, -5, 7]
 # # Вывод: [1, 9, 13, 14, 19]
-# from random import randint as rnd
 
 
 # def in_range(arr):
