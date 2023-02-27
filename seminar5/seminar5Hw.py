@@ -33,3 +33,45 @@
 # a = int(input("a = "))
 # b = int(input("b = "))
 # print(summa(a, b))
+
+# задача калькулятор необязательная.
+# Решать только через рекурсию!. Пользоваться встроенными функциями вычисления
+# таких выражений нельзя, если только для проверки вашего алгоритма.
+# на вход подается строка из операторов / * + - и целых чисел. Надо посчитать
+# результат введенного выражения.
+# Например,
+# на входе
+# 1+9/3*7-4
+# на выходе
+# 18
+def calc(arr):
+    res = 0
+    if len(arr) > 2:
+        mid = len(arr)//2
+        left = arr[:mid]
+        right = arr[mid:]
+        calc(left)
+        calc(right)
+        i = j= k = 0    
+        while i < len(left) or j<len(right):
+            if '/' in left:
+                res = res + int(left[i-1]/right[j])
+                i+=1
+                j+=1
+            if '*' in left:
+                res = res + int(left[i]*right[i])
+                i+=1
+                j+=1
+            if '+' in left:
+                res = res + int(left[i]+right[i])
+                i+=1
+                j+=1
+            if '-' in left:
+                res = res + int(left[i]-right[i])
+                i+=1
+                j+=1
+        return res
+
+arr = list(input("Введите пример: "))
+print(arr)
+print(calc(arr))

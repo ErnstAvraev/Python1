@@ -132,14 +132,14 @@
 
 # # print(56)
 
-path = 'file.txt'
-data = open('file.txt', 'r')
-for line in data:
-    print(line)
-data.close()
-import os
-print(os.getcwd())
-print(os.path.abspath('file.txt'))
+# path = 'file.txt'
+# data = open('file.txt', 'r')
+# for line in data:
+#     print(line)
+# data.close()
+# import os
+# print(os.getcwd())
+# print(os.path.abspath('file.txt'))
 
 #                                   модуль os
 
