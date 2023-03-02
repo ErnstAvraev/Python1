@@ -12,5 +12,11 @@ while True:
     elif command == "/stop":
         print("Бот остановил свою работу. Заходите еще, будем рады!)")
         break
+    elif command == "/all":
+        print("Вот текущий список фильмов")
+        print(films)
+    elif command == "/add":
+        f = input("Введите название фильма: ")
+        films.append(f)
     else:
         print("Неопознаная команда. Просьба изучить мануал через /help")
